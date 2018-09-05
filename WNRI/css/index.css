@@ -1,0 +1,179 @@
+section {
+  padding: 150px 0;
+}
+body { 
+	padding-top: 50px; 
+	min-width: 490px;
+}
+#logo {
+}
+.nav-button {
+	padding-left: 10px;
+}
+#schedule-button {
+	background-color: #db7800;
+	color: white;
+}
+#schedule-button:hover {
+	background-color: #bc6801;
+}
+.padding-0 {
+	padding: 0px;
+}
+.margin-0 {
+	margin: 0px;
+}
+
+#bar1 {
+	display: flex;
+	align-items: center;
+	background-color: white;
+}
+
+#home {
+	display: inline;
+	float: left;
+	position: relative;
+}
+#bar1-img {
+	display: inline-block;
+	float: left;
+}
+#bar1-text {
+	color:black;
+	position: absolute;
+	display: inline-block;
+	bottom: 0px;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 20px;
+
+}
+#bar1-text h1{
+	font-family: 'Lora', serif;
+	font-weight: bold;
+	display: inline-block;
+}
+#channels{
+	display: inline-block;
+	margin-left: 10px;
+}
+#bar1-text h2, h2{
+	display: block;
+	font-family: 'Bree Serif', serif;
+	font-weight: lighter;
+	padding: 0px;
+	margin: 0px;
+}
+#bar1-text h3, h3{
+	display: block;
+	font-style: italic;
+	font-family: 'Lora', serif;
+}
+#about{
+	background-image: url("../resources/bricks.jpg"); 
+	background-size: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	display: flex;
+}
+#about-jumbo {
+	margin: 10px;
+}
+.about-button {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	margin-top: 20px;
+}
+.about-text {
+	margin-bottom: 70px;
+}
+#coverage {
+	display: flex;
+	padding: 30px;
+}
+#map-img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+#coverage-text {
+	display: inline-block;
+	/*padding-top: 100px;*/
+}
+#advertise {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#advertise-title {
+	padding-bottom: 15px;
+}
+#ad-col-1{
+	margin-top: 25px;
+}
+#ad-col-2{
+	padding: 20px;
+	/*box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.9);*/
+}
+#hosting {
+	padding: 50px;
+	background-color: #f98900;
+}
+
+
+
+
+/* If the screen size is 780 wide or less...*/
+@media screen and (max-width: 780px) {
+  #bar1-img {
+  	height: 150px;
+  }
+  h1 {
+    font-size: 60px;
+	line-height: 60px;
+  }
+  h2 {
+  	font-size: 20px;
+  }
+  h3 {
+  	font-size: 15px;
+  }
+  .nav-button {
+  	padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 781px) {
+  #bar1-img {
+  	height: 200px;
+  }
+  h1 {
+    font-size: 100px;
+	line-height: 100px;
+  }
+  h2 {
+  	font-size: 35px;
+  }
+  h3 {
+  	font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 995px) {
+  h3 {
+  	font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+	.nav-button{
+		padding-left: 0px;
+		padding-top: 5px;
+		padding-bottom: 15px;
+	}
+}
