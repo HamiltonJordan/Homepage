@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Boxes!!</title>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<style type="text/css">
+		/* COLORS:
+		 * 	-Navy Blue:		#18121E;
+		 * 	-Gun Metal:		#233237;
+		 * 	-Rusty Red:		#984B43;
+		 * 	-Warm Yellow:	#EAC67A;
+		 */
+
+		body {
+			width: 100%;
+			margin: 0px;
+		}
+		p {
+			font-family: 'Poiret One', sans-serif;
+			font-size: 12pt;
+			font-weight: 100;
+			color: white;
+			margin: 5px;
+		}
+		p.light {
+			color: #EAC67A;
+		}
+		p.dark {
+			color: #233237;
+		}
+		p.light-title {
+			color: #EAC67A;
+			font-weight: bold;
+			font-size: 16pt;
+		}
+		p.dark-title {
+			color: #233237;
+			font-weight: bold;
+			font-size: 16pt;
+		}
+		.banner {
+			height: 250px;
+			width: 100%;
+			background-color: #18121E;
+			background-image: url("images/back_2.png");
+			position: relative;
+		}
+
+		.banner div.a {
+			position: absolute;
+			bottom: 2px;
+			left: 0;
+		}
+		.banner div.b {
+			position: absolute;
+			bottom: 80px;
+			left: 0;
+		}
+		.banner div.c {
+			position: absolute;
+			bottom: 110px;
+			left: 0;
+		}
+		.banner h1, .banner h2 {
+			color: #EAC67A;
+		/*	font-family: 'Poiret One', cursive;	*/
+			font-family: 'Oswald', sans-serif;
+			text-shadow: 1px 1px 0px #222222;
+			margin: 0px;
+			padding-bottom: 0px;
+		}
+		.banner h1 {
+			font-size: 60pt;
+			font-weight: bold;
+			line-height: 80px;
+			display: inline;
+		}
+		.banner h1:hover {
+			color: #984B43;
+		}
+		.banner h2 {
+			font-size: 20pt;
+			font-weight: normal;
+			line-height: 30px;
+		}
+		.menu_bar {
+			margin-top: 0;
+		}
+		.menu_bar ul {
+			display: inline;
+			margin-top: 0;
+			margin-bottom: 0px;
+			position: absolute;
+			bottom: 2px;
+			right: 10px;
+		}
+		.menu_bar li {
+			display: inline;
+			font-family: 'Oswald', sans-serif;
+			margin-top: 0;
+			margin-right: 20px;
+			margin-bottom: 0px;
+			color: white;
+			font-size: 12pt;
+			font-weight: bold;
+			line-height: 0px;
+			padding: 0px;
+		}
+		.menu_bar li:hover {
+			color: #EAC67A;
+			margin-bottom: 0;
+			padding-bottom:0;
+		}
+		.menu_bar li:active {
+			color: #984B43;
+		}
+		.menu_bar a{
+			text-decoration: none;
+		}
+		.row1 {
+			width: 100%;
+			height: 400px;
+			background-color: #18121E;
+			padding:0px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.splash {
+			width: 30%;
+			height: 100%;
+			/*border: 3px solid red;*/
+			float: left;
+			padding: inherit;
+			background-color: #984B43;
+			border-right: 5px dotted #18121E;
+			border-bottom: 5px dotted #233237;
+			box-sizing: border-box;
+		}
+		.upcoming {
+			width: 70%;
+			height: 100%;
+			/*border: 3px solid brown;*/
+			float: left;
+			background-color: #18121E;
+			border-left: 5px dotted #984B43;
+			border-bottom: 5px dotted #233237;
+			box-sizing: border-box;
+
+		}
+		.splash h1 {
+			/*color: #5c1615;*/
+			color: #18121E;
+			font-family: 'Oswald', sans-serif;
+			text-shadow: 1px 1px 0px #222222;
+			margin: 0px;
+			padding-left: 2px;
+			font-size: 60pt;
+			font-weight: bold;
+			line-height: 80px;
+		}
+		.splash hr {
+			display: block;
+			height: 1px;
+			width: 60%;
+			border: 0;
+			border-top: 1px solid #18121E;
+			margin: 1em 0;
+			padding: 0;
+			text-align:center; margin: 10px auto;
+		}
+		.upcoming h1 {
+			color: #5c1615;
+			/*color: #EAC67A;*/
+			font-family: 'Oswald', sans-serif;
+			text-shadow: 1px 1px 0px #EAC67A;
+			text-align: right;
+			margin-top: 0px;
+			margin-right: 10px;
+			padding: 0;
+			width: 98%;
+			font-size: 30pt;
+			font-weight: bold;
+			line-height: 65px;
+			float: left;
+			/*display: block;*/
+			padding-right: 0px;
+			padding-bottom: 0px;
+		}
+		.upcoming .subWindow1 {
+			box-sizing: padding-box;
+			/*margin-right: 10px;*/
+			width: 50%;
+			margin-left: 10px;
+			margin-top: 0px;
+			margin-right: 5px;
+			margin-bottom: 25px;
+			height:100px;
+			border: 1px solid #EAC67A;
+			border-radius: 5px;
+			float: left;
+			/*display: block;*/
+			position: relative;
+			top: -60px;
+			padding: 0;
+			overflow: hidden;
+		}
+		
+		.upcoming .subWindow2 {
+			box-sizing: padding-box;
+			/*margin-right: 10px;*/
+			width: 50%;
+			margin-left: 10px;
+			margin-top: 0px;
+			margin-right: 5px;
+			margin-bottom: 25px;
+			height:100px;
+			border: 1px solid #EAC67A;
+			background-color: #233237;
+			border-radius: 5px;
+			float: left;
+			/*display: block;*/
+			position: relative;
+			top: -60px;			
+			padding: 0;
+			overflow: hidden;
+		}
+		.upcoming .subWindow3 {
+			box-sizing: padding-box;
+			/*margin-right: 10px;*/
+			width: 45%;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 10px;
+			margin-bottom: 8px;
+			height:319px;
+			border: 1px solid #EAC67A;
+			border-radius: 5px;
+			float: right;
+			/*display: block;*/
+			position: relative;
+			top: -25px;
+			left: -10px;
+			padding: 0;
+			overflow: hidden;
+		}
+		.upcoming .subWindow1 img, .upcoming .subWindow2 img {
+			border: none;
+			margin: 0;
+			float: right;
+			width: 30%;
+			position: relative;
+			top: -10px;
+			left: -10px;
+			display: inline;
+		}
+		.upcoming .subWindow3 img{
+			width: 100%;
+		}
+		.row2 {
+			width: 100%;
+			height: 600px;
+			background-color: #233237;
+			padding:0px;
+			position: relative;
+			overflow: hidden;
+		}
+
+	</style>
+</head>
+
+<body>
+    <div class=banner>
+		<div class = c><h2>The Museum </h2></div>
+		<div class = b><h2>of the Odd and </h2></div>
+		<div class = a><h1>B</h1><h1>i</h1><h1>z</h1><h1>a</h1><h1>r</h1><h1>r</h1><h1>e</h1></div>
+		
+		
+		<div class = menu_bar>
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="visit.html"><li>Visit</li></a>
+				<a href="exhibits.html"><li>Exhibits</li>
+				<li>Contact</li>
+				<a href="https://www.moma.org/"><li>Friends</li></a>
+				<a href="#hideMenu"><li>▼</li></a>
+				
+			</ul>
+		</div>
+		<a name="hideMenu"></a>
+		
+		
+	</div>
+	
+	<div class=row1>
+		<div class=splash>
+			<h1>Welcome...</h1>
+			<hr align="center"></hr>
+			<p>Why hello there, we've been expecting you... Please come inside. You've arrived at the web portal belonging to the Museum of the Odd and Bizzare! (MoBz) Poke around and get a feel for the Museum. Our page is still under development so please cut us a little slack! ;)</p>
+			<img src="images/oldMan2.png" style="float: left; height: 40%;"></img>
+		</div>
+		<div class=upcoming>
+			<h1>Upcoming Attractions</h1>
+			<div class= "subWindow3">
+				<div style="height: 80%;">
+					<img src = "images/houses2.gif"></img>
+				</div>
+				<p class="light-title">Bear On The Loose!</p>
+				<p class="light">Any sightings?</p>
+			</div>
+			<div class= "subWindow1">
+				<p class="light-title">Brother Bear
+					<img src = "images/bear-orb.png"></img>
+				</p>
+				<p class="light" style="margin-right: 150px;">MOBZ's most charming attraction is our fan-favorite, the Brothers Bear!
+				<i>(Pooh and Berenstein)</i></p>
+			</div>
+			<div class= "subWindow2">
+				<p class="light-title">Bike in the Day
+					<img src = "images/bike.png"></img>
+				</p>
+				<p class="light" style="margin-right: 150px;">Come take a spin on one these babies in our 'retro' bicycle exhibit, coming soon!</p>
+			</div>
+			<div class= "subWindow1">
+				<p class="light-title">Cat Eyes
+					<img src = "images/cat.png"></img>
+				</p>
+				<p class="light" style="margin-right: 150px;">You asked and we listened! Back by popular demand, it's cat eyes!</p>
+				
+			</div>
+
+		</div>
+	</div>
+	
+	<div class=row2>
+		<img src="images/colorTest.gif" style="border-right: 10px solid blue;"></img>
+	</div>
+</body>
