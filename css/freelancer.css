@@ -271,6 +271,7 @@ header.masthead h2 {
     font-size: 3rem;
   }
 }
+#
 
 .floating-label-form-group {
   position: relative;
@@ -341,8 +342,12 @@ a {
   color: #18BC9C;
 }
 
-a:focus, a:hover, a:active {
-  color: #128f76;
+a:hover {
+  color: #660099;
+}
+
+a:focus, a:active {
+  color: white;
 }
 
 .btn {
@@ -383,4 +388,18 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+.btn-modal {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.img-modal {
+}
+
+@media (max-width: 768px) {
+  .btn-modal {
+    display: block;
+  }
 }
