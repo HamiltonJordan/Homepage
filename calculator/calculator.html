@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="calculator.css" rel="stylesheet">
+
+		<title>Calculator - JavaScript</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="workspace">
+				<div id="inputField">
+					<input type="text" id="inputValue" onfocus="this.value='';">
+				</div>
+				<div id="whiteboard">
+
+				</div>
+			</div>
+			<div id="menu">
+				<button class="menuButton" onclick="click1();" id="button1">+</button>
+				<button class="menuButton" onclick="click2();" id="button2">-</button>
+				<button class="menuButton" onclick="click3();" id="button3">x</button>
+				<button class="menuButton" onclick="click4();" id="button4">%</button>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript" src="calculator.js"></script>
+</html>

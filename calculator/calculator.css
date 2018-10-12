@@ -1,0 +1,58 @@
+body{
+	background-color: powderblue;
+}
+#wrapper{
+	margin: 40px;
+}
+#menu{
+	float: left;
+	display: inline-block;
+	background-color: black;
+	width: 200px;
+	height: 600px;
+	text-align: center;
+}
+#workspace{
+	float: left;
+	display: inline-block;
+	background-color: white;
+	width: 600px;
+	height: 600px;
+}
+#inputField{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+	border-bottom: 1px solid black;
+}
+#inputField input{
+	box-sizing: border-box;
+	width: 100%;
+	direction: rtl;
+}
+#whiteboard{
+	margin: 0px;
+	text-align: right;
+	margin-top: 0px;
+}
+#whiteboard p{
+	padding: 5px;
+	padding-right: 15px;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+#whiteboard p:first-child{
+	padding: 10px;
+	padding-right: 15px;
+	background-color: blue;
+	color: white;
+}
+.menuButton{
+	width: 100px;
+	height: 50px;
+	margin-top: 25px;
+	font-size: 30px;
+}
+.selected{
+	background-color: red;
+}
